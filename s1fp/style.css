@@ -49,9 +49,21 @@ a:hover {
     margin-bottom: 50px;
 }
 
+.webringimage {
+    width: 60px;
+    position: fixed;
+    top: calc(50vh - 150px);
+    left: calc(50vw - 5px);
+}
+
 .plus {
     font-size: 40;
     position: absolute;
     left: calc(50vw - 5px);
     top: calc(50vh - 50px);
+}
+
+.webring {
+    position: absolute
+
 }
