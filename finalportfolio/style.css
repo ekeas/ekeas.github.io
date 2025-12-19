@@ -1,0 +1,324 @@
+body {
+    margin: 0;
+}
+
+
+.desk {
+    position: relative;
+    background-image: url('Table.png');
+    background-size: cover;
+    background-position: center;
+    width: 1440px;
+    height: 810px;
+    overflow: hidden;
+}
+
+.desk a {
+  position: absolute;
+  display: block;
+}
+
+.paperclips {
+    position: absolute;
+    z-index: 1;
+    height: 250px;
+    top: 380px;
+    left: 80px;
+    opacity: 85%;
+    filter: drop-shadow(3px 3px 10px rgba(18, 15, 45, 0.5));
+}
+
+.notebook {
+    position: absolute;
+    z-index: 2;
+    height: 650px;
+    transform: rotate(20deg);
+    top: 130px;
+    left: 280px;
+    filter: drop-shadow(3px 3px 10px rgba(18, 15, 45, 0.5));
+    pointer-events: none;
+}
+
+.candy {
+    position: absolute;
+    z-index: 1;
+    height: 210px;
+    top: 190px;
+    left: 90px;
+    transform: rotate(-80deg);
+    filter: drop-shadow(3px 3px 10px rgba(18, 15, 45, 0.5));
+}
+
+.pencilshaving {
+    position: absolute;
+    z-index: 1;
+    height: 160px;
+    top: 200px;
+    left: 240px;
+    filter: drop-shadow(3px 3px 10px rgba(18, 15, 45, 0.5));
+}
+
+.sheet {
+    position: absolute;
+    z-index: 1;
+    height: 450px;
+    top: 160px;
+    left: 800px;
+    filter: drop-shadow(3px 3px 10px rgba(18, 15, 45, 0.5));
+}
+
+.readings {
+    position: absolute;
+    z-index: 2;
+    top: 50px;
+    right: 90px;
+    transform: rotate(-10deg);
+}
+
+.readings img {
+  height: 300px;
+  display: block;
+}
+
+.s1a1 {
+    position: absolute;
+    z-index: 1;
+    top: 190px;
+    left: 820px;
+}
+
+.s1a1 img {
+  height: 115px;
+  display: block;
+}
+
+.s1a2 {
+    position: absolute;
+    z-index: 2;
+    top: 400px;
+    left: 600px;
+    transform: rotate(20deg);
+}
+
+.s1a2 img {
+  height: 115px;
+  display: block;
+}
+
+.s1fp {
+    position: absolute;
+    z-index: 2;
+    top: 400px;
+    left: 500px;
+    transform: rotate(30deg);
+}
+
+.s1fp img {
+  height: 115px;
+  display: block;
+}
+
+.s2a1 {
+    position: absolute;
+    z-index: 1;
+    top: 325px;
+    left: 820px;
+}
+
+.s2a1 img {
+  height: 115px;
+  display: block;
+}
+
+.s2a2 {
+    position: absolute;
+    z-index: 2;
+    top: 200px;
+    left: 600px;
+    transform: rotate(80deg);
+}
+
+.s2a2 img {
+  height: 115px;
+  display: block;
+}
+
+.s2fp {
+    position: absolute;
+    z-index: 1;
+    top: 325px;
+    left: 1045px;
+
+}
+
+.s2fp img {
+  height: 115px;
+  display: block;
+}
+
+.s3a1 {
+    position: absolute;
+    z-index: 2;
+    top: 300px;
+    left: 550px;
+    transform: rotate(30deg);
+}
+
+.s3a1 img {
+  height: 115px;
+  display: block;
+}
+
+.s3a2 {
+    position: absolute;
+    z-index: 2;
+    top: 600px;
+    left: 600px;
+    transform: rotate(-30deg);
+}
+
+.s3a2 img {
+  height: 115px;
+  display: block;
+}
+
+.s3fp {
+    position: absolute;
+    z-index: 1;
+    top: 465px;
+    left: 1045px;
+}
+
+.s3fp img {
+  height: 115px;
+  display: block;
+}
+
+
+.s1a1,
+.s1a2,
+.s1fp,
+.s2a1,
+.s2a2,
+.s2fp,
+.s3a1,
+.s3a2,
+.s3fp,
+.readings {
+    transition: transform 160ms ease, filter 160ms ease;
+    cursor: pointer;
+    position: absolute;      
+    display: block;          
+    overflow: visible;      
+}
+
+.s1a1:hover,
+.s1a2:hover,
+.s1fp:hover,
+.s2a1:hover,
+.s2a2:hover,
+.s2fp:hover,
+.s3a1:hover,
+.s3a2:hover,
+.s3fp:hover,
+.readings:hover {
+    transform: translateY(-12px);
+    filter: drop-shadow(6px 10px 14px rgba(18, 15, 45, 0.35));
+    z-index: 50;     
+}
+
+.s1a1:hover::after {
+    content: "Section 1 Assignment 1";
+    font-family: Helvetica;
+    color: #966919;
+}
+
+.s1a2:hover::after {
+    content: "Section 1 Assignment 2";
+    font-family: Helvetica;
+    color: #966919;
+}
+
+.s1fp:hover::after {
+    content: "Section 1 Final Project";
+    font-family: Helvetica;
+    color: #966919;
+}
+
+.s2a1:hover::after {
+    content: "Section 2 Assignment 1";
+    font-family: Helvetica;
+    color: #966919;
+}
+
+.s2a2:hover::after {
+    content: "Section 2 Assignment 2";
+    font-family: Helvetica;
+    color: #966919;
+}
+
+.s2fp:hover::after {
+    content: "Section 2 Final Project";
+    font-family: Helvetica;
+    color: #966919;
+}
+
+.s3a1:hover::after {
+    content: "Section 3 Assignment 1";
+    font-family: Helvetica;
+    color: #966919;
+}
+
+.s3a2:hover::after {
+    content: "Section 3 Assignment 2";
+    font-family: Helvetica;
+    color: #966919;
+}
+
+.s3fp:hover::after {
+    content: "Section 3 Final Project";
+    font-family: Helvetica;
+    color: #966919;
+}
+
+
+.s1a1::after,
+.s1a2::after,
+.s1fp::after,
+.s2a1::after,
+.s2a2::after,
+.s2fp::after,
+.s3a1::after,
+.s3a2::after,
+.s3fp::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: -10px;
+    transform: translate(-50%, -100%);
+    padding: 6px 10px;
+    background: rgba(255, 255, 255, 0.95);
+    color: #12102d;
+    font-weight: 600;
+    font-size: 14px;
+    border-radius: 10px;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 120ms ease;
+    z-index: 9999;
+}
+
+.s1a1:hover::after,
+.s1a2:hover::after,
+.s1fp:hover::after,
+.s2a1:hover::after,
+.s2a2:hover::after,
+.s2fp:hover::after,
+.s3a1:hover::after,
+.s3a2:hover::after,
+.s3fp:hover::after {
+    opacity: 1;
+}
+
+
